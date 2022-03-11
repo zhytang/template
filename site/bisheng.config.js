@@ -63,8 +63,8 @@ module.exports = {
   },
   webpackConfig(config) {
     config.resolve.alias = {
-      'antd/lib': path.join(process.cwd(), 'components'),
-      'antd/es': path.join(process.cwd(), 'components'),
+      'antd/lib': path.join(process.cwd(), 'node_modules', 'antd', 'lib'),
+      'antd/es': path.join(process.cwd(), 'node_modules', 'antd', 'es'),
       // Change antd from `index.js` to `site/antd.js` to remove deps of root style
       antd: path.join(process.cwd(), 'site', 'antd'),
       site: path.join(process.cwd(), 'site'),
