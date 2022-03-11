@@ -12,6 +12,9 @@ export default collect(async nextProps => {
   const pageData = isChangelog(pathname)
     ? nextProps.data.changelog.CHANGELOG
     : nextProps.utils.get(nextProps.data, pageDataPath);
+
+  console.log('pageData', pageDataPath, nextProps);
+
   if (!pageData) {
     throw 404; // eslint-disable-line no-throw-literal
   }

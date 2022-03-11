@@ -1,8 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
+import { ConfigContext } from 'antd/lib/config-provider';
 import Checkbox, { CheckboxChangeEvent } from './Checkbox';
-import { ConfigContext } from '../config-provider';
 
 export type CheckboxValueType = string | number | boolean;
 

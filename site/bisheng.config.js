@@ -34,7 +34,7 @@ module.exports = {
     components: './components',
     docs: './docs',
     changelog: ['CHANGELOG.zh-CN.md', 'CHANGELOG.en-US.md'],
-    'components/form/v3': ['components/form/v3.zh-CN.md', 'components/form/v3.en-US.md'],
+    // 'components/form/v3': ['components/form/v3.zh-CN.md', 'components/form/v3.en-US.md'],
     'docs/resources': ['./docs/resources.zh-CN.md', './docs/resources.en-US.md'],
   },
   theme: ANT_THEME ? './site/theme/index-css-only.js' : './site/theme',
@@ -66,7 +66,7 @@ module.exports = {
       'antd/lib': path.join(process.cwd(), 'node_modules', 'antd', 'lib'),
       'antd/es': path.join(process.cwd(), 'node_modules', 'antd', 'es'),
       // Change antd from `index.js` to `site/antd.js` to remove deps of root style
-      antd: path.join(process.cwd(), 'site', 'antd'),
+      antd: path.join(process.cwd(), 'node_modules', 'antd'),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',
     };

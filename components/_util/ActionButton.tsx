@@ -1,7 +1,7 @@
 import * as React from 'react';
 import useState from 'rc-util/lib/hooks/useState';
-import Button from '../button';
-import { LegacyButtonType, ButtonProps, convertLegacyProps } from '../button/button';
+import { Button } from 'antd';
+import { LegacyButtonType, ButtonProps, convertLegacyProps } from 'antd/lib/button/button';
 
 export interface ActionButtonProps {
   type?: LegacyButtonType;

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import RcCheckbox from 'rc-checkbox';
+import { ConfigContext } from 'antd/lib/config-provider';
 import { GroupContext } from './Group';
-import { ConfigContext } from '../config-provider';
 import devWarning from '../_util/devWarning';
 
 export interface AbstractCheckboxProps<T> {
