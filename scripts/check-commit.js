@@ -61,7 +61,8 @@ async function checkAll() {
 
   await checkCommit(status);
 
-  await checkRemote();
+  // 暂时不检查远程分支
+  // await checkRemote();
 }
 
 checkAll();
