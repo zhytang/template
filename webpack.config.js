@@ -96,7 +96,7 @@ function processWebpackThemeConfig(themeConfig, theme, vars) {
         console.log(chalk.red('🆘 Seems entry has changed! It should be `./index`'));
       }
 
-      config.entry[entryName.replace('antd', `antd2.${theme}`)] = replacedPath;
+      config.entry[entryName.replace('antd2', `antd2.${theme}`)] = replacedPath;
       delete config.entry[entryName];
     });
 
