@@ -1,6 +1,6 @@
 {
   "name": "antd2",
-  "version": "4.19.1",
+  "version": "0.0.2",
   "description": "An enterprise-class UI design language and React components implementation",
   "title": "Ant Design",
   "keywords": [
@@ -280,8 +280,5 @@
       "path": "./dist/antd.variable.min.css",
       "maxSize": "66 kB"
     }
-  ],
-  "tnpm": {
-    "mode": "npm"
-  }
+  ]
 }
