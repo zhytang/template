@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { mount, render } from 'enzyme';
-import Collapse from '../../collapse';
-import Table from '../../table';
+import Collapse from 'antd/lib/collapse';
+import Table from 'antd/lib/table';
+import Input from 'antd/lib/input';
 import Checkbox from '../index';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
-import Input from '../../input';
 
 describe('CheckboxGroup', () => {
   mountTest(Checkbox.Group);

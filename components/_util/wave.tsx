@@ -1,8 +1,13 @@
 import * as React from 'react';
 import { updateCSS } from 'rc-util/lib/Dom/dynamicCSS';
 import { supportRef, composeRef } from 'rc-util/lib/ref';
+import {
+  ConfigConsumer,
+  ConfigConsumerProps,
+  CSPConfig,
+  ConfigContext,
+} from 'antd/lib/config-provider';
 import raf from './raf';
-import { ConfigConsumer, ConfigConsumerProps, CSPConfig, ConfigContext } from '../config-provider';
 import { cloneElement } from './reactNode';
 
 let styleForPseudo: HTMLStyleElement | null;

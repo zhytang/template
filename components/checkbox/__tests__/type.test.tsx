@@ -1,6 +1,6 @@
 import * as React from 'react';
+import Input from 'antd/lib/input';
 import Checkbox from '..';
-import Input from '../../input';
 
 describe('Checkbox.typescript', () => {
   it('Checkbox', () => {

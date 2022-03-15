@@ -2,7 +2,7 @@ import React from 'react';
 import Moment from 'moment';
 import MockDate from 'mockdate';
 import { mount } from 'enzyme';
-import ConfigProvider from '../../components/config-provider';
+import ConfigProvider from 'antd/lib/config-provider';
 
 // eslint-disable-next-line jest/no-export
 export default function rtlTest(Component: React.ComponentType, mockDate?: boolean) {

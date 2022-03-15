@@ -4,7 +4,7 @@ import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import classNames from 'classnames';
-import { ValidateStatus } from '../form/FormItem';
+import { ValidateStatus } from 'antd/lib/form/FormItem';
 import { tuple } from './type';
 
 const InputStatuses = tuple('warning', 'error', '');
