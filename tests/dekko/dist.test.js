@@ -13,7 +13,7 @@ $('dist')
   .hasFile('antd.dark.less')
   .hasFile('antd2.dark2.css')
   .hasFile('antd.compact.less')
-  .hasFile('antd.compact.css')
+  .hasFile('antd2.compact2.css')
   .hasFile('dark-theme.js');
 
 // eslint-disable-next-line no-console
