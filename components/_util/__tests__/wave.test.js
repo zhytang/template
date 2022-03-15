@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Wave from '../wave';
 import ConfigProvider from 'antd/lib/config-provider';
+import Wave from '../wave';
 import mountTest from '../../../tests/shared/mountTest';
 import { sleep } from '../../../tests/utils';
 
