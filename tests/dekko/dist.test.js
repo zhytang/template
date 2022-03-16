@@ -9,10 +9,10 @@ $('dist')
   .hasFile('zhytang.min.css')
   .hasFile('zhytang.js')
   .hasFile('zhytang.min.js')
-  .hasFile('zhytang.less')
-  .hasFile('zhytang.dark.less')
+  .hasFile('antd.less')
+  .hasFile('antd.dark.less')
   .hasFile('zhytang.dark.css')
-  .hasFile('zhytang.compact.less')
+  .hasFile('antd.compact.less')
   .hasFile('zhytang.compact.css')
   .hasFile('dark-theme.js');
 
