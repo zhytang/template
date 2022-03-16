@@ -521,13 +521,13 @@ class MainContent extends Component {
             <section className={mainContainerClass}>
               {this.renderMainContent({ theme, setIframeTheme })}
             </section>
-            {componentPage && (
+            {/* {componentPage && (
               <div className="fixed-widgets">
                 <Dropdown overlay={this.getThemeSwitchMenu()} placement="top">
                   <Avatar className="fixed-widgets-avatar" size={44} icon={<ThemeIcon />} />
                 </Dropdown>
               </div>
-            )}
+            )} */}
             <PrevAndNext prev={prev} next={next} />
             <Footer location={location} />
           </Col>
