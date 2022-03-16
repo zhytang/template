@@ -43,8 +43,8 @@ function ignoreMomentLocale(webpackConfig) {
 }
 
 function addLocales(webpackConfig) {
-  let packageName = 'antd-with-locales';
-  if (webpackConfig.entry['@zhytang/antd2.min']) {
+  let packageName = 'zhytang-with-locales';
+  if (webpackConfig.entry['zhytang.min']) {
     packageName += '.min';
   }
   webpackConfig.entry[packageName] = './index-with-locales.js';
@@ -96,7 +96,7 @@ function processWebpackThemeConfig(themeConfig, theme, vars) {
         console.log(chalk.red('🆘 Seems entry has changed! It should be `./index`'));
       }
 
-      config.entry[entryName.replace('@zhytang/antd2', `@zhytang/antd2.${theme}`)] = replacedPath;
+      config.entry[entryName.replace('zhytang', `zhytang.${theme}`)] = replacedPath;
       delete config.entry[entryName];
     });
 
@@ -109,10 +109,10 @@ function processWebpackThemeConfig(themeConfig, theme, vars) {
         after: {
           root: './dist',
           include: [
-            `antd.${theme}.js`,
-            `antd.${theme}.js.map`,
-            `antd.${theme}.min.js`,
-            `antd.${theme}.min.js.map`,
+            `zhytang.${theme}.js`,
+            `zhytang.${theme}.js.map`,
+            `zhytang.${theme}.min.js`,
+            `zhytang.${theme}.min.js.map`,
           ],
           log: false,
           logWarning: false,
