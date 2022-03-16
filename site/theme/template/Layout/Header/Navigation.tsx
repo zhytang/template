@@ -29,7 +29,6 @@ export default ({
   responsive,
   location,
   directionText,
-  showTechUIButton,
   onLangChange,
   onDirectionChange,
 }: NavigationProps) => {
@@ -92,12 +91,12 @@ export default ({
           <FormattedMessage id="app.header.menu.components" />
         </Link>
       </Menu.Item>
-      <Menu.Item key="docs/resources">
+      {/* <Menu.Item key="docs/resources">
         <Link to={utils.getLocalizedPathname('/docs/resources', isZhCN, location.query)}>
           <FormattedMessage id="app.header.menu.resource" />
         </Link>
-      </Menu.Item>
-      {showTechUIButton && (
+      </Menu.Item> */}
+      {/* {showTechUIButton && (
         <Menu.Item key="tech-ui">
           <a href="https://techui.alipay.com" target="__blank" rel="noopener noreferrer">
             TechUI
@@ -108,7 +107,7 @@ export default ({
         <Menu.Item key="mirror">
           <a href="https://ant-design.gitee.io">国内镜像</a>
         </Menu.Item>
-      )}
+      )} */}
       {additional}
     </Menu>
   );
