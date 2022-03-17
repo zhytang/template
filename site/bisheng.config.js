@@ -69,6 +69,10 @@ module.exports = {
       antd: path.join(process.cwd(), 'node_modules', 'antd'),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',
+
+      'zhytang/lib': path.join(process.cwd(), 'components'),
+      'zhytang/es': path.join(process.cwd(), 'components'),
+      zhytang: path.join(process.cwd(), 'index'),
     };
 
     config.externals = {

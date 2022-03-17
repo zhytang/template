@@ -19,4 +19,6 @@ if (
 export type { CheckboxProps, CheckboxOptionType } from './checkbox';
 export { default as Checkbox } from './checkbox';
 
+export { default as Todo } from './todo';
+
 export { default as version } from './version';
