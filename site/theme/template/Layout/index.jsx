@@ -54,8 +54,8 @@ const RESPONSIVE_MOBILE = 768;
 // for dark.css timestamp to remove cache
 const timestamp = new Date().getTime();
 const themeMap = {
-  dark: `/dark.css?${timestamp}`,
-  compact: `/compact.css?${timestamp}`,
+  // dark: `/dark.css?${timestamp}`,
+  // compact: `/compact.css?${timestamp}`,
 };
 const themeConfig = {
   themeMap,

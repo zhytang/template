@@ -1,9 +1,7 @@
 ---
-category: Components # 顶部导航类别
+category: 组件 # 顶部导航类别
 subtitle: 待办 # document.title和菜单子标题
-type: 待办列表 # 菜单上级目录，可以理解成分类
 title: Todo # document.title和菜单标题
-cover: https://gw.alipayobjects.com/zos/alicdn/zNdJQMhfm/Switch.svg
 ---
 
 代办列表。

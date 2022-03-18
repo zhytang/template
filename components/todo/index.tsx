@@ -8,6 +8,7 @@ export type TodoAppendEventHandler = (item: TodoModel) => void;
 export interface TodoModel {
   checked?: boolean;
   disabled?: boolean;
+  /** 主键 */
   text: string;
 }
 
@@ -41,7 +42,7 @@ const Todo: React.FC<TodoProps> = ({ todos = [], onAppend, onComplete }) => {
   };
 
   return (
-    <>
+    <div className="todo">
       <Input onKeyDown={keyDown} value={text} onChange={textChange} />
 
       <ul className="todos">
@@ -53,7 +54,7 @@ const Todo: React.FC<TodoProps> = ({ todos = [], onAppend, onComplete }) => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

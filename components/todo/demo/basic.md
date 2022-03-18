@@ -15,7 +15,9 @@ The most basic usage.
 
 ```jsx
 // eslint-disable-next-line import/no-unresolved
-import { Todo, TodoModel } from 'zhytang';
+import { Todo } from 'zhytang';
+// eslint-disable-next-line import/no-unresolved
+import { TodoModel } from 'zhytang/lib/todo';
 
 const todos: TodoModel[] = [
   {
