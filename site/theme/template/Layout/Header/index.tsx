@@ -1,16 +1,14 @@
 import React from 'react';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { injectIntl } from 'react-intl';
 import classNames from 'classnames';
 import { UnorderedListOutlined } from '@ant-design/icons';
-import { Select, Row, Col, Popover, Button } from 'antd';
+import { Select, Row, Col, Popover } from 'antd';
 import canUseDom from 'rc-util/lib/Dom/canUseDom';
 import * as utils from '../../utils';
 import packageJson from '../../../../../package.json';
 import Logo from './Logo';
 import SearchBar from './SearchBar';
-import More from './More';
 import Navigation from './Navigation';
-import Github from './Github';
 import SiteContext from '../SiteContext';
 import { ping } from '../../utils';
 import { AlgoliaConfig } from './algolia-config';
