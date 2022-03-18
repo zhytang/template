@@ -2,7 +2,6 @@ import * as React from 'react';
 import collect from 'bisheng/collect';
 import { useIntl } from 'react-intl';
 import Article from '../Content/Article';
-import Footer from '../Layout/Footer';
 import * as utils from '../utils';
 import './index.less';
 import AffixTabs from './AffixTabs';
@@ -120,12 +119,13 @@ function injectCards(content: ContentUnit[]): ContentUnit[] {
 }
 
 const Resources = (props: ResourcesProps) => {
-  const { localizedPageData, location } = props;
+  const { localizedPageData } = props;
   const { locale } = useIntl();
 
-  const content = React.useMemo(() => injectCards(localizedPageData.content), [
-    localizedPageData.content,
-  ]);
+  const content = React.useMemo(
+    () => injectCards(localizedPageData.content),
+    [localizedPageData.content],
+  );
 
   return (
     <div id="resources-page">
@@ -141,7 +141,7 @@ const Resources = (props: ResourcesProps) => {
         titleRegionClassName="title-region"
       />
 
-      <Footer location={location} />
+      {/* <Footer location={location} /> */}
     </div>
   );
 };

@@ -10,7 +10,6 @@ import MobileMenu from 'rc-drawer';
 
 import Article from './Article';
 import PrevAndNext from './PrevAndNext';
-import Footer from '../Layout/Footer';
 import SiteContext from '../Layout/SiteContext';
 import ComponentDoc from './ComponentDoc';
 import ComponentOverview from './ComponentOverview';
@@ -463,20 +462,20 @@ class MainContent extends Component {
             theme={theme}
             setIframeTheme={setIframeTheme}
           />
-          {this.renderContributors()}
+          {/* {this.renderContributors()} */}
         </>
       );
     }
     return (
       <>
         <Article {...this.props} content={localizedPageData} />
-        {this.renderContributors()}
+        {/* {this.renderContributors()} */}
       </>
     );
   }
 
   render() {
-    const { demos, location } = this.props;
+    const { demos } = this.props;
     const { openKeys } = this.state;
     const { isMobile, theme, setIframeTheme } = this.context;
     const activeMenuItem = this.getActiveMenuItem();
@@ -528,7 +527,7 @@ class MainContent extends Component {
               </div>
             )} */}
             <PrevAndNext prev={prev} next={next} />
-            <Footer location={location} />
+            {/* <Footer location={location} /> */}
           </Col>
         </Row>
       </div>
