@@ -17,22 +17,25 @@ The most basic usage.
 import { Todo, TodoModel } from 'zhytang';
 
 const Demo: React.FC = () => {
-  const [todos, setTodos] = React.useState<TodoModel[]>([{
-    text: '基础组件Demo',
-  }, {
-    text: '演示组件Demo',
-  }]);
+  const [todos, setTodos] = React.useState([
+    {
+      text: '基础组件Demo',
+    },
+    {
+      text: '演示组件Demo',
+    },
+  ]);
 
   const append = (model: TodoModel) => {
     setTodos([...todos, model]);
-  }
+  };
 
   const complete = (index: number, model: TodoModel) => {
     todos.splice(index, 1);
     setTodos([...todos]);
-  }
+  };
 
-  return <Todo todos={todos} onAppend={append} onComplete={complete} />
+  return <Todo todos={todos} onAppend={append} onComplete={complete} />;
 };
 
 ReactDOM.render(<Demo />, mountNode);
