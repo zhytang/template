@@ -14,6 +14,7 @@ title:
 The most basic usage.
 
 ```jsx
+// eslint-disable-next-line import/no-unresolved
 import { Todo, TodoModel } from 'zhytang';
 
 const Demo: React.FC = () => {
