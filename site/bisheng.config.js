@@ -72,7 +72,7 @@ module.exports = {
 
       'zhytang/lib': path.join(process.cwd(), 'components'),
       'zhytang/es': path.join(process.cwd(), 'components'),
-      zhytang: path.join(process.cwd(), 'index'),
+      zhytang: path.join(process.cwd(), 'components'),
     };
 
     config.externals = {
