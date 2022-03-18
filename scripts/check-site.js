@@ -79,9 +79,9 @@ describe('site test', () => {
         await expectComponent(component);
       });
 
-      it(`Component ${component} en Page`, async () => {
-        await expectComponent(component);
-      });
+      // it(`Component ${component} en Page`, async () => {
+      //   await expectComponent(component);
+      // });
     }
   }
 });

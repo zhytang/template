@@ -243,7 +243,7 @@ export default class Layout extends React.Component {
           <IntlProvider
             locale={appLocale.locale}
             messages={appLocale.messages}
-            defaultLocale="en-US"
+            defaultLocale="zh-CN"
           >
             <ConfigProvider
               locale={appLocale.locale === 'zh-CN' ? zhCN : null}
