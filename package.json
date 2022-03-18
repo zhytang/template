@@ -35,7 +35,7 @@
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
-  "unpkg": "dist/antd.min.js",
+  "unpkg": "dist/zhytang.min.js",
   "typings": "lib/index.d.ts",
   "scripts": {
     "prepare": "husky install",
